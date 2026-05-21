@@ -1,49 +1,59 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pannkakor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="recipe-page">
+    <header class="recipe-page__hero">
+        <img class="recipe-page__hero-image" src="pannkoka/pancake.jpg" alt="Tallrik med pannkakor, sylt och bär">
 
+        <div class="recipe-page__hero-content">
+            <h1 class="recipe-page__title">Goda pannkakor för alla</h1>
+            <p class="recipe-page__intro">Snabba pannkakor som passar både vardag och helg.</p>
+        </div>
+    </header>
 
-<img src="pannkoka/pancake.jpg" alt="Pannkakor">
+    <main class="recipe-page__main">
+        <article class="recipe-card">
+            <section class="recipe-card__section" aria-labelledby="ingredients-heading">
+                <h2 class="recipe-card__heading" id="ingredients-heading">Ingredienser</h2>
 
-<div class="container">
+                <ul class="recipe-card__list">
+                    <li class="recipe-card__item">2 1/2 dl vetemjöl</li>
+                    <li class="recipe-card__item">3 ägg</li>
+                    <li class="recipe-card__item">5 dl mjölk</li>
+                    <li class="recipe-card__item">1/2 tsk salt</li>
+                    <li class="recipe-card__item">1 msk socker</li>
+                    <li class="recipe-card__item">1 msk smör till stekning</li>
+                    <li class="recipe-card__item">Sylt till servering</li>
+                    <li class="recipe-card__item">Grädde, bär eller frukt som tillbehör</li>
+                </ul>
+            </section>
 
-    <h1>Goda pannkakor för alla</h1>
+            <section class="recipe-card__section" aria-labelledby="instructions-heading">
+                <h2 class="recipe-card__heading" id="instructions-heading">Gör så här</h2>
 
-    <p>Snabba pannkakor perfekta för alla tillfällen!</p>
+                <ol class="recipe-card__list recipe-card__list--ordered">
+                    <li class="recipe-card__item">Blanda mjöl, ägg och mjölk till en slät smet.</li>
+                    <li class="recipe-card__item">Tillsätt salt och socker.</li>
+                    <li class="recipe-card__item">Låt smeten vila i några minuter.</li>
+                    <li class="recipe-card__item">Stek pannkakorna i en stekpanna med lite smör.</li>
+                    <li class="recipe-card__item">Vänd pannkakan när den blir gyllene.</li>
+                    <li class="recipe-card__item">Servera med sylt, grädde, bär eller frukt.</li>
+                </ol>
+            </section>
 
-    <h2>Ingredienser</h2>
-    <ul>        
-<li>3 ägg</li>
-<li>5 dl mjölk</li>
-<li>1/2 tsk salt</li>
-<li>1 msk socker</li>
-<li>1 msk smör (till stekning)</li>
-<li>sylt (till servering)</li>
-<li>grädde (valfritt)</li>
-<li>bär eller frukt</li>
-
-    </ul>
-
-    <h2>Dags att laga pannkakor!</h2>
-    <ol>
-        
-<li>Blanda mjöl, ägg och mjölk till en slät smet</li>
-<li>Låt smeten vila i några minuter</li>
-<li>Stek pannkakor i en stekpanna med lite smör</li>
-<li>Vänd pannkakan när den blir gyllene</li>
-<li>Servera med sylt, grädde eller frukt</li>
-    </ol>
-
-    
-    <img src="pannkoka/pancake2.jpg" alt="Pannkakor">
-
-</div>
-
+            <figure class="recipe-card__figure">
+                <img class="recipe-card__image" src="pannkoka/pancake2.jpg" alt="Nygräddade pannkakor staplade på en tallrik">
+                <figcaption class="recipe-card__caption">
+                    Färdiga pannkakor kan serveras med sylt, grädde och färska bär.
+                </figcaption>
+            </figure>
+        </article>
+    </main>
 </body>
 </html>
