@@ -1,59 +1,70 @@
-<<!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pannkakor</title>
+    <title>Recept</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="recipe-page">
-    <header class="recipe-page__hero">
-        <img class="recipe-page__hero-image" src="pannkoka/pancake.jpg" alt="Tallrik med pannkakor, sylt och bär">
+<body>
 
-        <div class="recipe-page__hero-content">
-            <h1 class="recipe-page__title">Goda pannkakor för alla</h1>
-            <p class="recipe-page__intro">Snabba pannkakor som passar både vardag och helg.</p>
+    <header class="menu">
+
+        <div class="site name">
+            Recept
         </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="recept.html">Recept</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <a class="login-button" href="#">
+            Logga in
+        </a>
+
     </header>
 
-    <main class="recipe-page__main">
-        <article class="recipe-card">
-            <section class="recipe-card__section" aria-labelledby="ingredients-heading">
-                <h2 class="recipe-card__heading" id="ingredients-heading">Ingredienser</h2>
+    <main class="grid">
 
-                <ul class="recipe-card__list">
-                    <li class="recipe-card__item">2 1/2 dl vetemjöl</li>
-                    <li class="recipe-card__item">3 ägg</li>
-                    <li class="recipe-card__item">5 dl mjölk</li>
-                    <li class="recipe-card__item">1/2 tsk salt</li>
-                    <li class="recipe-card__item">1 msk socker</li>
-                    <li class="recipe-card__item">1 msk smör till stekning</li>
-                    <li class="recipe-card__item">Sylt till servering</li>
-                    <li class="recipe-card__item">Grädde, bär eller frukt som tillbehör</li>
-                </ul>
-            </section>
-
-            <section class="recipe-card__section" aria-labelledby="instructions-heading">
-                <h2 class="recipe-card__heading" id="instructions-heading">Gör så här</h2>
-
-                <ol class="recipe-card__list recipe-card__list--ordered">
-                    <li class="recipe-card__item">Blanda mjöl, ägg och mjölk till en slät smet.</li>
-                    <li class="recipe-card__item">Tillsätt salt och socker.</li>
-                    <li class="recipe-card__item">Låt smeten vila i några minuter.</li>
-                    <li class="recipe-card__item">Stek pannkakorna i en stekpanna med lite smör.</li>
-                    <li class="recipe-card__item">Vänd pannkakan när den blir gyllene.</li>
-                    <li class="recipe-card__item">Servera med sylt, grädde, bär eller frukt.</li>
-                </ol>
-            </section>
-
-            <figure class="recipe-card__figure">
-                <img class="recipe-card__image" src="pannkoka/pancake2.jpg" alt="Nygräddade pannkakor staplade på en tallrik">
-                <figcaption class="recipe-card__caption">
-                    Färdiga pannkakor kan serveras med sylt, grädde och färska bär.
-                </figcaption>
-            </figure>
+        <article class="card">
+            <a href="index.html">
+                <img src="pannkoka/pancake.jpg" alt="Pannkakor">
+                <div class="card-content">
+                    <h2>Pannkakor</h2>
+                    <p>Klassiska svenska pannkakor.</p>
+                </div>
+            </a>
         </article>
+
+        <article class="card">
+            <a href="index.html">
+                <img src="pannkoka/pancake2.jpg" alt="Pannkakor med bär">
+                <div class="card-content">
+                    <h2>Lyxpannkakor</h2>
+                    <p>Serveras med bär och grädde.</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="index.html">
+                <img src="pannkoka/pancake.jpg" alt="Frukostpannkakor">
+                <div class="card-content">
+                    <h2>Frukostpannkakor</h2>
+                    <p>Perfekt till helgen.</p>
+                </div>
+            </a>
+        </article>
+
     </main>
+
 </body>
 </html>
+```
