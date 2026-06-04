@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -13,16 +12,18 @@
 
     <header class="menu">
 
-        <div class="site name">
+        <div class="site-name">
             Recept
         </div>
 
-        <nav>
+        <nav aria-label="Huvudmeny">
+
             <ul class="nav-list">
                 <li><a href="recept.html">Recept</a></li>
                 <li><a href="#">Om oss</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
+
         </nav>
 
         <a class="login-button" href="#">
@@ -31,39 +32,118 @@
 
     </header>
 
+    <section class="hero">
+
+        <h1>Goda recept för alla</h1>
+
+        <p>
+            Här hittar du enkla och goda recept för vardag och helg.
+        </p>
+
+    </section>
+
     <main class="grid">
 
         <article class="card">
+
             <a href="index.html">
-                <img src="pannkoka/pancake.jpg" alt="Pannkakor">
+
+                <img
+                    src="pannkoka/pancake.jpg"
+                    alt="Pannkakor">
+
                 <div class="card-content">
+
                     <h2>Pannkakor</h2>
-                    <p>Klassiska svenska pannkakor.</p>
+
+                    <p>
+                        Klassiska svenska pannkakor.
+                    </p>
+
                 </div>
+
             </a>
+
         </article>
 
         <article class="card">
+
             <a href="index.html">
-                <img src="pannkoka/pancake2.jpg" alt="Pannkakor med bär">
+
+                <img
+                    src="pannkoka/pancake2.jpg"
+                    alt="Pannkakor med bär">
+
                 <div class="card-content">
+
                     <h2>Lyxpannkakor</h2>
-                    <p>Serveras med bär och grädde.</p>
+
+                    <p>
+                        Serveras med bär och grädde.
+                    </p>
+
                 </div>
+
             </a>
+
         </article>
 
         <article class="card">
+
             <a href="index.html">
-                <img src="pannkoka/pancake.jpg" alt="Frukostpannkakor">
+
+                <img
+                    src="pannkoka/pancake.jpg"
+                    alt="Frukostpannkakor">
+
                 <div class="card-content">
+
                     <h2>Frukostpannkakor</h2>
-                    <p>Perfekt till helgen.</p>
+
+                    <p>
+                        Perfekt till helgen.
+                    </p>
+
                 </div>
+
             </a>
+
         </article>
 
     </main>
+
+    <section class="form-section">
+
+        <h2>Kontakta oss</h2>
+
+        <form>
+
+            <label for="name">Namn</label>
+            <input
+                type="text"
+                id="name"
+                required>
+
+            <label for="email">E-post</label>
+            <input
+                type="email"
+                id="email"
+                required>
+
+            <label for="message">Meddelande</label>
+            <textarea
+                id="message"
+                rows="5"
+                required>
+            </textarea>
+
+            <button type="submit">
+                Skicka
+            </button>
+
+        </form>
+
+    </section>
 
 </body>
 </html>
